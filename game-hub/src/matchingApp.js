@@ -3,7 +3,7 @@ import Header from './components/header/Header';
 import Card from './components/matching/Card';
 import EndGame from './components/matching/endGame';
 
-import './styles/main.css';
+import './styles/matching.css';
 
 class App extends PureComponent {
 
