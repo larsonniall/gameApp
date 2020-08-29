@@ -4,7 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./Home";
+import Home from "./home";
 import Matching from "./matchingApp";
 import "./styles/index.css"
  
@@ -13,10 +13,10 @@ class Main extends Component {
     return (
     <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
+          <h1>What are we calling this??</h1>
           <ul className="header">
-            <li><NavLink exact to="/">Home</a></li>
-            <li><NavLink to="/cardMatching">Card Matching Game</a></li>
+            <li><NavLink exact to="/">Home</NavLink></li>
+            <li><NavLink to="/cardMatching">Card Matching Game</NavLink></li>
           </ul>
           <div className="content">
              <Route exact path="/" component={Home}/>
