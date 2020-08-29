@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Game from './matchingApp';
 import * as serviceWorker from './serviceWorker';
-import "./styles/index.css"
+
 
 ReactDOM.render(
   <React.StrictMode>

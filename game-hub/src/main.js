@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Matching from "./matchingApp";
+import "./styles/index.css"
  
 class Main extends Component {
   render() {
