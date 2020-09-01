@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Board from "./components/ticTacToe/board";
 import { calculateWinner} from "./components/ticTacToe/helper";
-
+import './styles/ticTacToe.css'
 
 
 export default function Game() {
