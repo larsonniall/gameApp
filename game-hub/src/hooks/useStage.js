@@ -33,7 +33,7 @@ export const useStage = (player, resetPlayer) => {
           }
         });
       });
-// check if we collided
+// checks if we collided
 if (player.collided){
   resetPlayer();
   return sweepRows(newStage);
