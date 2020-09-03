@@ -1,4 +1,5 @@
 export const TETROMINOS = {
+  // creates the shaped for the game
   0: { shape: [[0]], color: "0,0,0" },
   I: {
     shape: [
@@ -57,7 +58,7 @@ export const TETROMINOS = {
     color: "227, 78, 78",
   },
 };
-
+//will generate a random shape to us in the game
 export const randomTetromino = () => {
   const tetrominos = "IJLOSTZ";
   const randTetromino =

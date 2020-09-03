@@ -9,7 +9,7 @@ import Matching from "./matchingApp";
 import ticTacToe from "./ticTacToe";
 import Tetris from "./components/Tetris";
 import "./styles/index.css"
- 
+//  import "./index.css";
 class Main extends Component {
   render() {
     return (
