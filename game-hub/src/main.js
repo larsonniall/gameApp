@@ -7,8 +7,9 @@ import {
 import Home from "./home";
 import Matching from "./matchingApp";
 import ticTacToe from "./ticTacToe";
+import Tetris from "./components/Tetris";
 import "./styles/index.css"
- 
+//  import "./index.css";
 class Main extends Component {
   render() {
     return (
@@ -19,11 +20,13 @@ class Main extends Component {
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/cardMatching">Card Matching Game</NavLink></li>
             <li><NavLink to="/ticTacToe">Tic Tac Toe Game</NavLink></li>
+            <li><NavLink to="/Tetris"> tetris puzzle game</NavLink></li>
           </ul>
           <div className="content">
              <Route exact path="/" component={Home}/>
             <Route path="/cardMatching" component={Matching}/>
             <Route path="/ticTacToe" component={ticTacToe}/>
+            <Route path="/Tetris" component={Tetris}/>
           </div>
         </div>
     </HashRouter>
