@@ -60,8 +60,8 @@ checkWinner() {
 
 aiAction() {
   const availSpot = this.emptyIndexies()
-  const checkWinlines = this.state.winLines
-  const opponentIndexes = this.huPlayerIndexies()
+  const checkWinlines = this.state.Lines
+  const opponentIndexes = this.humanPlayerIndexies()
   let res = []
   let coverIndex = null
   checkWinlines.map((value, key) => {
@@ -98,6 +98,7 @@ return rand
 }
 
 handleClick = index => {
+    console.log("testing");
 if (this.state.winner !== null) {
     return
 }
@@ -108,10 +109,10 @@ if (newboard[index] !== null) {
     return
 }
 
-newboard[index] = this.state.huPlayer
+newboard[index] = this.state.humanPlayer
 this.setState({
     board: newboard,
-    player: this.state.huPlayer
+    player: this.state.humanPlayer
 })
 
 setTimeout(() => {
@@ -148,7 +149,7 @@ let iterator = _.filter(this.state.board, function (value, key) {
 return fills;
 }
 
-huPlayerIndexies = () => {
+humanPlayerIndexies = () => {
 
 let fills = []
 let iterator = _.filter(this.state.board, function (value, key) {

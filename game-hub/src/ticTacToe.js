@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '/styles/ticTacToe.css';
-import Helper from 'Components/ticTacToe/Helper';
+import './styles/ticTacToe.css';
+import Helper from './components/Helper.js';
+
 
 class App extends Component {
   render() {
