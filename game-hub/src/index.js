@@ -2,11 +2,13 @@
 // import App from "./App";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './main';
+import Routers from "./Routers"
+// import Main from './main';
 
 
 ReactDOM.render(
-  <Main />,
+  <Routers />,
+  // <Main />,
   document.getElementById('root')
 );
 
