@@ -2,11 +2,15 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const TetrisSchema = new Schema({
-    rows: {
+    highRows: {
         type: Number,
         required: true,
     },
     highScore: {
+        type: Number,
+        required: true,
+    },
+    highLevel: {
         type: Number,
         required: true,
     }

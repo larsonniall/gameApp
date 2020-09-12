@@ -60,8 +60,8 @@ checkWinner() {
 
 aiAction() {
   const availSpot = this.emptyIndexies()
-  const checkWinlines = this.state.winLines
-  const opponentIndexes = this.huPlayerIndexies()
+  const checkWinlines = this.state.Lines
+  const opponentIndexes = this.humanPlayerIndexies()
   let res = []
   let coverIndex = null
   checkWinlines.map((value, key) => {
@@ -98,6 +98,7 @@ return rand
 }
 
 handleClick = index => {
+    console.log("testing");
 if (this.state.winner !== null) {
     return
 }
@@ -108,10 +109,10 @@ if (newboard[index] !== null) {
     return
 }
 
-newboard[index] = this.state.huPlayer
+newboard[index] = this.state.humanPlayer
 this.setState({
     board: newboard,
-    player: this.state.huPlayer
+    player: this.state.humanPlayer
 })
 
 setTimeout(() => {
@@ -148,7 +149,7 @@ let iterator = _.filter(this.state.board, function (value, key) {
 return fills;
 }
 
-huPlayerIndexies = () => {
+humanPlayerIndexies = () => {
 
 let fills = []
 let iterator = _.filter(this.state.board, function (value, key) {
@@ -170,7 +171,7 @@ this.setState({
 }
 
 render() {
-const markColor = this.state.winner === this.state.huPlayer ? "#badc58" : "#ff7979"
+const markColor = this.state.winner === this.state.humanPlayer ? "#badc58" : "#ff7979"
 const Box = this.state.board.map((box, index) =>
     <div
         key={index}
@@ -187,7 +188,7 @@ return (
         width: "400px",
         margin: "10px auto"
     }}>
-        {this.state.winner === this.state.huPlayer && <div style={{
+        {this.state.winner === this.state.humanPlayer && <div style={{
             color: markColor
         }}>
             <h2>You Win!</h2>
