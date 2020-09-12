@@ -1,4 +1,6 @@
 module.exports = {
-    User: require("./User")
+    User: require("./User"),
     Match: require("./Match"),
+    Tetris: require("./Tetris"),
+    Tic: require("./Tic"),
 };
