@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 //        .then(() => console.log("mongodb connected"))
 //        .catch(err => console.log(err));
 
-const uri = "mongodb+srv://test:dUmm13@users.vaiff.mongodb.net/users?retryWrites=true&w=majority";
+const uri = "mongodb+srv://username:password@users.vaiff.mongodb.net/users?retryWrites=true&w=majority";
 
 mongoose.connect(uri) || "http://localhost:3000/",{
     useNewUrlParser: true,
