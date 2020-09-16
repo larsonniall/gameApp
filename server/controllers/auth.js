@@ -1,7 +1,7 @@
-import User from '../../src/models/User.js';
-import jwt from 'jsonwebtoken';
-import expressJwt from 'express-jwt';
-import config from '../config';
+import User from "../../client/src/models/User.js";
+import jwt from "jsonwebtoken";
+import expressJwt from "express-jwt";
+import config from "../config/index.js";
 
 export const signin = (req, res) => {
 	User.findOne({ email: req.body.email }, (err, user) => {

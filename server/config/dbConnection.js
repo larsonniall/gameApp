@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import config from './index';
+import config from './index.js';
 
 const URI = config.mongoURI;
 mongoose.connect(process.env.MONGODB_URI || URI, { useNewUrlParser: true });

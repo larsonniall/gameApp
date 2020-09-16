@@ -4,8 +4,8 @@ import {
   findUserById,
   findUserProfile,
   deleteUser,
-} from "../controllers/user";
-import { requireSignin, hasAuthorization } from "../controllers/auth";
+} from "../controllers/user.js";
+import { requireSignin, hasAuthorization } from "../controllers/auth.js";
 
 const router = express.Router();
 
