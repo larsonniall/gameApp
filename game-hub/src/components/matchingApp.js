@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
-import Header from './components/header/header';
-import Card from './components/matching/card'
-import EndGame from './components/matching/endGame';
-
-import './styles/matching.css';
+import Header from './header/header';
+import Card from './matching/card';
+import EndGame from './matching/endGame';
+import '../styles/matching.css'
 
 class App extends PureComponent {
 

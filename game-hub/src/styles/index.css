@@ -1,10 +1,13 @@
 body {
-    background-color: #FFCC00;
+    background-color: #047931;
     padding: 20px;
     margin: 0;
   }
   h1, h2, p, ul, li {
     font-family: sans-serif;
+  }
+  h1 {
+      color: white;
   }
   ul.header li {
     display: inline;

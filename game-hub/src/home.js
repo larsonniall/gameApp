@@ -4,8 +4,9 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h2>HELLO</h2>
-        <p>words and stuff?</p>
+        <h2>Welcome to Bored Games</h2>
+        <p>Click on a game and have fun</p>
+        <p>Sign up if you want to save your game stats</p>
       </div>
     );
   }

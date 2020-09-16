@@ -2,9 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const MatchSchema = new Schema({
-    bestTime: {
+    timer: {
         type: Number,
-        required: true,
+    },
+    moveCounter: {
+        type: Number,
     },
 });
 
