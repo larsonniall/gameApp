@@ -24,18 +24,6 @@ const userSchema = new Schema({
   },
 });
 
-// userSchema
-//   .virtual("password")
-//   .set(function (password) {
-//     console.log(password)
-//     this._password = password;
-//     this.salt = this.makeSalt();
-//     this.hashedPassword = this.encryptedPassword(password);
-//   })
-//   .get(function () {
-//     return this._password;
-//   });
-
 userSchema.methods = {
   authenticate: function (plainText) {
     return this.encryptedPassword(plainText) === this.hashedPassword;

@@ -9,7 +9,7 @@ import { requireSignin, hasAuthorization } from "../controllers/auth.js";
 
 const router = express.Router();
 
-router.route("/").post(registerUser);
+router.route("/api/users").post(registerUser);
 
 router
   .route("/api/users/:userId")

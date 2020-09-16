@@ -1,4 +1,4 @@
-import User from "../../client/src/models/User.js";
+import User from "../models/User.js";
 import jwt from "jsonwebtoken";
 import expressJwt from "express-jwt";
 import config from "../config/index.js";

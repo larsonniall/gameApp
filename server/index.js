@@ -1,4 +1,5 @@
 import express from "express";
+import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 import config from"./config/index.js";
 // ADD these
@@ -6,7 +7,7 @@ import userRoutes from "./routes/user.js";
 import authRoutes from "./routes/auth.js";
 
 // DB connection
-require("./config/dbConnection.js");
+mongoose.connect(config.mongoURI, { useMongoClient: true });
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // ADD routes
-app.use("/api/users", userRoutes);
+app.use("/", userRoutes);
 app.use("/auth", authRoutes);
 
 app.use((err, req, res, next) => {

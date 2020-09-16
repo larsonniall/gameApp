@@ -1,4 +1,4 @@
-import User from "../../client/src/models/User.js";
+import User from "../models/User.js";
 
 export const registerUser = (req, res, next) => {
 	const user = new User(req.body);
