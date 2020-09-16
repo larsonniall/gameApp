@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import SignIn from ".././components/signIn";
-import SignUp from ".././components/signUp";
+import SignIn from "../components/signIn";
+import SignUp from "../components/signUp";
 import Main from "../main";
 import AuthApi from "../utils/AuthApi";
 

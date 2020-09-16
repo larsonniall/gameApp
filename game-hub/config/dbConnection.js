@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import config from './index';
 
 const URI = config.mongoURI;
-mongoose.connect(URI);
+mongoose.connect(process.env.MONGODB_URI || URI, { useNewUrlParser: true });
 
 // When successfully connected
 mongoose.connection.on('connected', () => {

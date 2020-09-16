@@ -35,6 +35,7 @@ function Main() {
           <li>
             <NavLink to="/Tetris"> tetris puzzle game</NavLink>
           </li>
+         
                     
         </ul>
                   
@@ -44,6 +45,7 @@ function Main() {
           <Route path="/cardMatching" component={Matching} />
           <Route path="/ticTacToe" component={ticTacToe} />
           <Route path="/Tetris" component={Tetris} />
+        
                     
         </div>
                 

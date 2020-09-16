@@ -9,7 +9,7 @@ import { requireSignin, hasAuthorization } from "../controllers/auth";
 
 const router = express.Router();
 
-router.route("/api/users").post(registerUser);
+router.route("/").post(registerUser);
 
 router
   .route("/api/users/:userId")
@@ -19,3 +19,5 @@ router
 router.param("userId", findUserById);
 
 export default router;
+
+// learn express better

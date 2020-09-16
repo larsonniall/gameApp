@@ -1,11 +1,11 @@
-import User from '../models/User';
+import User from '../../src/models/User.js';
 
 export const registerUser = (req, res, next) => {
 	const user = new User(req.body);
 	user.save((err, result) => {
 		if (err) {
 			return res.status(400).json({
-				error: 'Error'
+				error: err
 			});
 		}
 		res.status(200).json({
