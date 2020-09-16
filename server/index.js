@@ -20,6 +20,8 @@ app.use(cookieParser());
 app.use("/", userRoutes);
 app.use("/auth", authRoutes);
 
+app.use(express.static("../client/public"))
+
 app.use((err, req, res, next) => {
   if (err.name === "UnauthorizedError") {
     res.status(401).json({ error: err.name + ":" + err.message });

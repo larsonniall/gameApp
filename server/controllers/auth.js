@@ -42,7 +42,6 @@ export const signout = (req, res) => {
 };
 
 export const requireSignin = expressJwt({
-	// secret: 'shhhhhhared-secret',
 	secret: config.jwtSecret,
 	userProperty: 'auth',
 	algorithms: ['RS256']
