@@ -1,7 +1,7 @@
 {
-  "name": "game-hub",
+  "name": "boredGames",
   "version": "0.1.0",
-  "homepage":"http://localhost:3000/home",
+  "homepage": "http://localhost:3000/home",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -20,6 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "material-ui": "^0.20.2",
     "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
@@ -36,7 +37,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "api": "babel-node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,8 +56,15 @@
     ]
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "gh-pages": "^3.1.0",
     "nodemon": "^2.0.4",
     "styled-components": "^5.2.0"
-  }
+  },
+  "description": "react games",
+  "main": "server.js",
+  "repository": "https://github.com/larsonniall/gameApp.git",
+  "license": "MIT"
 }

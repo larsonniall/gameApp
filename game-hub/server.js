@@ -1,9 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const morgan = require("morgan");
 const passport = require("passport");
 
 const users = require("./routes/api/users");
+
+import { getStats, postStats, deleteStats } from "./routes/api/stats";
 
 const app = express();
 
@@ -13,6 +16,7 @@ app.use(
     })
   );
 app.use(bodyParser.json());
+app.use(morgan('dev'));
 
 //const db = require("./config/keys").mongoURI;
 
@@ -25,6 +29,15 @@ const uri = "mongodb+srv://username:password@users.vaiff.mongodb.net/users?retry
 mongoose.connect(uri) || "http://localhost:3000/",{
     useNewUrlParser: true,
 }
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+app.route('/stats').post(postStats).get(getStats).delete(deleteStats);
 
 app.use(passport.initialize());
 
