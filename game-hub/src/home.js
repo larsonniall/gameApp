@@ -1,12 +1,17 @@
 import React, { Component } from "react";
- 
+import backgroundImage from "./img/main.jpg";
+
+
+ console.log(backgroundImage, "image");
+
+
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>words and stuff?</p>
-      </div>
+      <div className = "image"> </div>
+     
+
+
     );
   }
 }

@@ -1,10 +1,23 @@
 body {
-    background-color: #FFCC00;
+
     padding: 20px;
     margin: 0;
+    
   }
-  h1, h2, p, ul, li {
+  /* .conic-gradient {
+    background: conic-gradient(#fff, #000);
+  } */
+
+ 
+
+   h2, p, ul, li {
     font-family: sans-serif;
+  }
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: teal;
+    font-family: 'Monoton', cursive;
   }
   ul.header li {
     display: inline;
@@ -22,10 +35,7 @@ body {
     padding: 20px;
     display: inline-block;
   }
-  .content {
-    background-color: #FFF;
-    padding: 20px;
-  }
+
   .content h2 {
     padding: 0;
     margin: 0;
@@ -36,3 +46,15 @@ body {
   .active {
     background-color: #0099FF;
   }
+
+  #root {
+   width: 100%;
+  }
+
+  .image {
+    background-image: url(../img/main.jpg);
+    width : 200vh auto;
+    height: 100vh; 
+    background-size: cover;
+  }
+  

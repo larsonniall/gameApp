@@ -29,7 +29,7 @@ code {
   cursor: pointer;
   color:#fff;
   font-size:90px;
-  background: #61a335;
+  background:black;
 }
 .board .col:nth-child(3n+1) {
   border-left: 1px solid #aaa;
@@ -43,4 +43,17 @@ code {
   color:#222;
   font-size: 16px;
   margin-top:15px;
+}
+
+.App {
+  background-image: url(../img/tic.jpg);
+  width : 200vh auto;
+  height: 100vh; 
+  background-size: cover;
+}
+
+h2 {
+  font-family: fantasy;
+  padding: 20px;
+  font-size: 50px;
 }
